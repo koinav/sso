@@ -1,0 +1,13 @@
+version: '3'
+
+tasks:
+
+  run:
+    desc: "Runs sso"
+    cmds:
+      - go run cmd/sso/main.go -config "./config/local.yaml"
+
+  migrate:
+    desc: "Run the Go migrator with specified paths"
+    cmds:
+      - go run ./cmd/migrator --storage-path=./storage/sso.db --migrations-path=./migrations
