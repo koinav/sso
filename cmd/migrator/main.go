@@ -13,7 +13,7 @@ func main() {
 	var storagePath, migrationsPath, migrationsTable string
 
 	flag.StringVar(&storagePath, "storage-path", "", "path to storage")
-	flag.StringVar(&migrationsPath, "migrations-path", "", "path to storage")
+	flag.StringVar(&migrationsPath, "migrations-path", "", "path to migrations")
 	flag.StringVar(&migrationsTable, "migrations-table", "migrations", "name of migrations")
 	flag.Parse()
 
